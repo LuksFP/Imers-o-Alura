@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Campeonato Brasileiro</h1>
+
+  <input type="text" id="campoNomeTime" placeholder="digite o nome do time" />
+  <button onClick="criarTime()">Adicionar novo time</button>
+
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="5">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaTimes">
+
+    </tbody>
+  </table>
+  <button onClick="apagarTimes()">Apagar todos os times</button>
+</body>
+<script src="./main.js"></script>
+</html>
